@@ -149,4 +149,16 @@ def start():
 
 
 if __name__ == '__main__':
-    start()
+    while True:
+        start()
+        choice = input('''
+Deseja iniciar um novo jogo?
+    1. Sim
+    2. Não
+        '''
+        )
+        if int(choice) == 1:
+            continue
+        else:
+            input("Obrigado por jogar!")
+            break
