@@ -14,25 +14,25 @@ Seguindo o pseudocódigo para da execução do jogo da forca:
   6. Definir o número de tentativas restantes (tentativas_restantes = tentativas_max)
   
   7. ENQUANTO tentativas_restantes > 0 FAÇA:
-      8. Exibir o estado atual da palavra (com traços para letras não adivinhadas)
-      9. Exibir as letras erradas já tentadas
-      10. Solicitar ao jogador que insira uma letra (letra)
+      1. Exibir o estado atual da palavra (com traços para letras não adivinhadas)
+      2. Exibir as letras erradas já tentadas
+      3. Solicitar ao jogador que insira uma letra (letra)
   
-      11. SE letra ESTÁ em palavra_secreta ENTÃO:
-          12. Adicionar letra à lista letras_corretas
-          13. SE todas as letras de palavra_secreta ESTÃO em letras_corretas ENTÃO:
-              14. Exibir mensagem de vitória ("Você venceu!")
-              15. FIM
-      16. SENÃO:
-          17. Adicionar letra à lista letras_erradas
-          18. Reduzir tentativas_restantes em 1
-          19. Exibir mensagem de erro ("Letra incorreta!")
+      4. SE letra ESTÁ em palavra_secreta ENTÃO:
+          1. Adicionar letra à lista letras_corretas
+          2. SE todas as letras de palavra_secreta ESTÃO em letras_corretas ENTÃO:
+              1. Exibir mensagem de vitória ("Você venceu!")
+              2. FIM
+      5. SENÃO:
+          1. Adicionar letra à lista letras_erradas
+          2. Reduzir tentativas_restantes em 1
+          3. Exibir mensagem de erro ("Letra incorreta!")
   
-  20. FIM DO ENQUANTO
+  8. FIM DO ENQUANTO
   
-  21. SE tentativas_restantes == 0 ENTÃO:
-      22. Exibir mensagem de derrota ("Você perdeu! A palavra era: palavra_secreta")
-  23. FIM
+  9. SE tentativas_restantes == 0 ENTÃO:
+      1. Exibir mensagem de derrota ("Você perdeu! A palavra era: palavra_secreta")
+  10. FIM
 
 - Primeira versão
   ![image](https://github.com/user-attachments/assets/2d366bd0-9292-4c85-b368-9a8f5d153759)
